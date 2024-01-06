@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "798697aa-349d-480d-ad75-c4febff85a01",
+		"name": "RecomendationSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7919015"
+	},
+	"item": [
+		{
+			"name": "GetMovie",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "uxid",
+						"value": "user1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:2122/api/movies/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2122",
+					"path": [
+						"api",
+						"movies",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMovies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "uxid",
+						"value": "user1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:2122/api/movies?page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2122",
+					"path": [
+						"api",
+						"movies"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MovieRecommendations",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "uxid",
+						"value": "user1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:2122/api/recommendations/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2122",
+					"path": [
+						"api",
+						"recommendations",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
